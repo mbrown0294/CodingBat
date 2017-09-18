@@ -45,3 +45,13 @@ def monkey_trouble(a_smile, b_smile):
     return True
   else:
     return False
+
+
+def parrot_trouble(talking, hour):
+  var = False
+  if hour < 7 or hour > 20:
+    var = True
+  if var == True and talking == True:
+    return True
+  else:
+    return False
