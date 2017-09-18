@@ -17,3 +17,8 @@ def near_hundred(n):
         return True
     else:
         return False
+
+
+def missing_char(str, n):
+  words = str[:n] + str[(n+1):]
+  return words
