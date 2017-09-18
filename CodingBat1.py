@@ -31,3 +31,10 @@ def front_back(str):
   if len(str) < 2:
     return first
   return last + middle + first
+
+
+def front3(str):
+    if len(str) < 3:
+        return str + str + str
+    chunk = str[:3]
+    return chunk + chunk + chunk
