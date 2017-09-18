@@ -82,3 +82,10 @@ def makes10(a, b):
     return True
   else:
     return False
+
+
+def not_string(str):
+  start = str[:3]
+  if start == "not":
+    return str
+  return "not " + str
