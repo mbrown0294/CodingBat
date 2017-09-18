@@ -22,3 +22,12 @@ def near_hundred(n):
 def missing_char(str, n):
   words = str[:n] + str[(n+1):]
   return words
+
+
+def front_back(str):
+  first = str[:1]
+  last = str[-1:]
+  middle = str[1:-1]
+  if len(str) < 2:
+    return first
+  return last + middle + first
