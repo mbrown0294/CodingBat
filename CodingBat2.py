@@ -78,3 +78,12 @@ def array123(nums):
   return res
 
 
+def string_match(a, b):
+  count = 0
+  leng = len(a)
+  if len(b) < leng:
+    leng = len(b)
+  for x in xrange(leng - 1):
+    if a[x:x+2] == b[x:x+2]:
+      count += 1
+  return count
