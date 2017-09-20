@@ -33,3 +33,12 @@ def string_splosion(str):
     phrase += str[:count]
     count += 1
   return phrase
+
+
+def last2(str):
+  phr = str[-2:]
+  count = 0
+  for x in xrange(len(str) - 2):
+    if str[x:x +2] == phr:
+      count += 1
+  return count
