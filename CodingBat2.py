@@ -21,3 +21,15 @@ def front_times(str, n):
 
 def string_bits(str):
   return str[::2]
+
+
+def string_splosion(str):
+  leng = len(str)
+  if leng <= 0:
+    return ""
+  phrase = ""
+  count = 1
+  for x in xrange(leng):
+    phrase += str[:count]
+    count += 1
+  return phrase
