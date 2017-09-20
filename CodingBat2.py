@@ -50,3 +50,19 @@ def array_count9(nums):
     if x == 9:
       count += 1
   return count
+
+
+def array_front9(nums):
+  leng = 4
+  if len(nums) < leng:
+    leng = len(nums)
+  count = 0
+  for x in xrange(leng):
+    if nums[x] == 9:
+      count += 1
+  if count > 0:
+    return True
+  else:
+    return False
+
+
