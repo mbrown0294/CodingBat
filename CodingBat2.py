@@ -66,3 +66,15 @@ def array_front9(nums):
     return False
 
 
+def array123(nums):
+  res = False
+  count = 0
+  ray = [1,2,3]
+  for x in xrange(len(nums) - 2):
+    if nums[x:x+3] == ray:
+      res = True
+  if count > 0:
+    res = True
+  return res
+
+
