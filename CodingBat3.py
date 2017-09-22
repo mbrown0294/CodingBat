@@ -32,3 +32,12 @@ def first_half(str):
 
 def without_end(str):
   return str[1:-1]
+
+
+def combo_string(a, b):
+  sho = a
+  lon = b
+  if len(a) > len(b):
+    lon = a
+    sho = b
+  return sho  + lon + sho
