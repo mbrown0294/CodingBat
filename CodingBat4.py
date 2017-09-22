@@ -29,3 +29,7 @@ def common_end(a, b):
   if lasta == lastb:
     return True
   return False
+
+
+def sum3(nums):
+  return nums[0] + nums[1] + nums[2]
