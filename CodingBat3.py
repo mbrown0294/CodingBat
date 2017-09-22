@@ -16,3 +16,6 @@ def make_out_word(out, word):
   return one + word + two
 
 
+def extra_end(str):
+  end = str[-2:]
+  return end + end + end
