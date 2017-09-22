@@ -19,3 +19,7 @@ def make_out_word(out, word):
 def extra_end(str):
   end = str[-2:]
   return end + end + end
+
+
+def first_two(str):
+  return str[:2]
