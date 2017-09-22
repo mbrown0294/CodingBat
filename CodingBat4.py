@@ -17,3 +17,15 @@ def same_first_last(nums):
 def make_pi():
   nums = [3,1,4]
   return nums
+
+
+def common_end(a, b):
+  firsta = a[0]
+  firstb = b[0]
+  lasta = a[len(a)-1]
+  lastb = b[len(b)-1]
+  if firsta == firstb:
+    return True
+  if lasta == lastb:
+    return True
+  return False
