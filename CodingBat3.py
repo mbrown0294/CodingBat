@@ -45,3 +45,9 @@ def combo_string(a, b):
 
 def non_start(a, b):
   return a[1:] + b[1:]
+
+
+def left2(str):
+  if len(str) == 2:
+    return str
+  return str[2:] + str[:2]
