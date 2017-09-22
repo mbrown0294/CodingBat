@@ -23,3 +23,8 @@ def extra_end(str):
 
 def first_two(str):
   return str[:2]
+
+
+def first_half(str):
+  leng = len(str) / 2
+  return str[:leng]
