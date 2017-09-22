@@ -41,3 +41,7 @@ def combo_string(a, b):
     lon = a
     sho = b
   return sho  + lon + sho
+
+
+def non_start(a, b):
+  return a[1:] + b[1:]
