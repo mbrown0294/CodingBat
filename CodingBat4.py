@@ -14,3 +14,6 @@ def same_first_last(nums):
   return False
 
 
+def make_pi():
+  nums = [3,1,4]
+  return nums
