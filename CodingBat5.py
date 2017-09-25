@@ -78,3 +78,12 @@ def in1to10(n, outside_mode):
     if (n >= 1) & (n <= 10):
       return True
   return False
+
+
+def near_ten(num):
+  for x in xrange(3):
+    if ((num + x) % 10) == 0:
+      return True
+    elif ((num - x) % 10) == 0:
+      return True
+  return False
