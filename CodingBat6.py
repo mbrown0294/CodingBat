@@ -67,3 +67,15 @@ def round10(num):
   return 0
 
 
+def close_far(a, b, c):
+  if abs(b - a) <= 1:
+    if (abs(c - b) >= 2) & (abs(c - a) >= 2):
+      return True
+    return False
+  elif abs(c - a) <= 1:
+    if (abs(c - b) >= 2) & (abs(b -a) >= 2):
+      return True
+    return False
+  return False
+
+
