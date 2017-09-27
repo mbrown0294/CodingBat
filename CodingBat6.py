@@ -12,3 +12,17 @@ def make_bricks(small, big, goal):
     return rep
 
 
+def lone_sum(a, b, c):
+  if a == b:
+    if a == c:
+      return 0
+    else:
+      return c
+  elif a == c:
+    return b
+  elif b == c:
+    return a
+  else:
+    return a + b + c
+
+
