@@ -79,3 +79,19 @@ def close_far(a, b, c):
   return False
 
 
+def make_chocolate(small, big, goal):
+  if goal - (big * 5) >= 0:
+    if goal - (big * 5) <= small:
+      return goal - (big * 5)
+    else:
+      return -1
+  else:
+    num = 0
+    while num < (goal - 4):
+      num += 5
+    if (goal - num) <= small:
+      return goal - num
+    else:
+      return -1
+
+
