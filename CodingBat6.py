@@ -26,3 +26,14 @@ def lone_sum(a, b, c):
     return a + b + c
 
 
+def lucky_sum(a, b, c):
+  nums = [a,b,c]
+  sum = 0
+  for x in nums:
+    if x == 13:
+      return sum
+    else:
+      sum += x
+  return sum
+
+
