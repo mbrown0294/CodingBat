@@ -37,3 +37,19 @@ def lucky_sum(a, b, c):
   return sum
 
 
+def no_teen_sum(a, b, c):
+    numa = fix_teen(a)
+    numb = fix_teen(b)
+    numc = fix_teen(c)
+    return numa + numb + numc
+
+
+def fix_teen(n):
+    if (n == 15) | (n == 16):
+        return n
+    elif (n >= 13) & (n <= 19):
+        return 0
+    else:
+        return n
+
+
