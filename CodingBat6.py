@@ -93,5 +93,3 @@ def make_chocolate(small, big, goal):
       return goal - num
     else:
       return -1
-
-
