@@ -53,3 +53,17 @@ def fix_teen(n):
         return n
 
 
+def round_sum(a, b, c):
+  return round10(a) + round10(b) + round10(c)
+def round10(num):
+  if num < 5:
+    return 0
+  elif num < 10:
+    return 10
+  elif num % 10 < 5:
+    return num - (num % 10)
+  else:
+    return num + (10 - (num % 10))
+  return 0
+
+
