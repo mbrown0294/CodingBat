@@ -32,3 +32,19 @@ def count_code(str):
   return count
 
 
+def end_other(a, b):
+  newA = a.lower()
+  newB = b.lower()
+  big = newA
+  small = newB
+  if(len(b) > len(a)):
+    big = newB
+    small = newA
+  boo = False
+  start = len(big) - len(small)
+  end = len(big)
+  if big[start:] == small:
+    boo = True
+  return boo
+
+
