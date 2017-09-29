@@ -35,3 +35,13 @@ def centered_average(nums):
   return sum / size
 
 
+def sum13(nums):
+  sum = 0
+  for x in range(len(nums)):
+    if (nums[x] == 13) | ((nums[x-1] == 13) & (x != 0)):
+      sum += 0
+    else:
+      sum += nums[x]
+  return sum
+
+
