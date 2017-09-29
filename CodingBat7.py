@@ -13,3 +13,14 @@ def count_hi(str):
   return count
 
 
+def cat_dog(str):
+    countC = 0
+    countD = 0
+    for x in range(len(str) - 2):
+        if str[x:x + 3] == "cat":
+            countC += 1
+        if str[x:x + 3] == "dog":
+            countD += 1
+    return countC == countD
+
+
