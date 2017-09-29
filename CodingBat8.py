@@ -17,3 +17,21 @@ def big_diff(nums):
     return large - small
 
 
+def centered_average(nums):
+  new = list(nums)
+  large = new[0]
+  small = new[0]
+  size = len(new) - 2
+  for x in range(len(new)):
+    if new[x] > large:
+      large = new[x]
+    if new[x] < small:
+      small = new[x]
+  new.remove(small)
+  new.remove(large)
+  sum = 0
+  for x in new:
+    sum += x
+  return sum / size
+
+
