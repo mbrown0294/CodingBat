@@ -48,3 +48,16 @@ def end_other(a, b):
   return boo
 
 
+def xyz_there(str):
+  boo = False
+  if str == "xyz":
+    return True
+  for x in range(len(str)-2):
+    if str[x:x+3] == "xyz":
+      boo = True
+      if x != 0:
+        if(str[x-1] == "."):
+          boo = False
+  return boo
+
+
